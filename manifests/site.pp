@@ -1,8 +1,5 @@
 node 'node1' {   
-    class {'tomcat':
-        xms => '54m',
-        xmx => '127m',
-    }
+    include tomcat
     
     tomcat::deploy { "sysfoo" :
         deploy_url          => 'https://2-120669565-gh.circle-artifacts.com/0/tmp/circle-artifacts.8yv2Y1B/sysfoo.war',
@@ -30,11 +27,7 @@ node default {
 
 node 'node2' {
 
-    class {'::tomcat' :
-    
-    }
-    
-    
+    include tomcat
     
     tomcat::deploy { "sysfoo" :
         deploy_url          => 'https://2-120669565-gh.circle-artifacts.com/0/tmp/circle-artifacts.8yv2Y1B/sysfoo.war',
