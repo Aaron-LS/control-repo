@@ -1,7 +1,4 @@
-node 'node1' {
-    
-    include base
-    
+node 'node1' {   
     class {'tomcat':
         xms => '54m',
         xmx => '127m',
@@ -32,9 +29,7 @@ node default {
 
 
 node 'node2' {
-    
-    include base
-    
+
     class {'::tomcat' :
     
     }
