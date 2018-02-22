@@ -1,0 +1,7 @@
+---
+tomcat::xms: "89m"
+tomcat::xmx: "122m"
+ntp:servers:
+  - 0.node2.pool.ntp.org
+  - 0.node2.pool.ntp.org
+  - 0.node2.pool.ntp.org
