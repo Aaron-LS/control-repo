@@ -1,12 +1,13 @@
----
-version: 5
-
-defaults:
-  datadir: "data"
-
-hierarchy:
-  - name: 'Yaml backend'
-    data_hash: yaml_data
-    paths:
-      - "nodes/%{trusted.certname}.yaml"
-      - 'common.yaml'
+---                                                                                                                         
+:backends:                                                                                                                  
+  - yaml                                                                                                                    
+  - json                                                                                                                    
+:yaml:                                                                                                                      
+  :datadir: "/workspace/code/environments/%{::environment}/hieradata"                                                       
+:json:                                                                                                                      
+  :datadir: "/workspace/code/environments/%{::environment}/hieradata"                                                       
+:hierarchy:                                                                                                                 
+  - "nodes/%{::trusted.certname}"                                                                                           
+  - "%{::environment}"                                                                                                      
+  - "%{::osfamily}"                                                                                                         
+  - "common"     
