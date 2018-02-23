@@ -17,3 +17,9 @@ mod 'java',
   :git    => 'https://github.com/Aaron-LS/puppet-module-java.git'
 #  :branch => 'docs_experiment'
 
+mod 'profile',
+  :git    => 'https://github.com/Aaron-LS/puppet-module-profile.git'
+
+mod 'role',
+  :git    => 'https://github.com/Aaron-LS/puppet-module-role.git'
+
