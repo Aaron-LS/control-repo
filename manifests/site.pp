@@ -1,13 +1,9 @@
 hiera_include('classes')
 
 node 'node1' {   
-    include tomcat
+
+    include role::web
     
-    tomcat::deploy { "sysfoo" :
-        deploy_url          => 'https://2-120669565-gh.circle-artifacts.com/0/tmp/circle-artifacts.8yv2Y1B/sysfoo.war',
-        checksum            => 'md5',
-        checksum_value      => '40bdb4a6a0abc29c60354b8c5a70622c',
-    }
 }
 
 node default {
@@ -29,11 +25,6 @@ node default {
 
 node 'node2' {
 
-    include tomcat
-    
-    tomcat::deploy { "sysfoo" :
-        deploy_url          => 'https://2-120669565-gh.circle-artifacts.com/0/tmp/circle-artifacts.8yv2Y1B/sysfoo.war',
-        checksum            => 'md5',
-        checksum_value      => '40bdb4a6a0abc29c60354b8c5a70622c',
-    }
+    include role::web
+
 }
