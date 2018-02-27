@@ -24,9 +24,9 @@ mod 'puppetlabs-tomcat', '2.3.0'
 #  :git    => 'https://github.com/Aaron-LS/puppet-module-java.git'
 #  :branch => 'docs_experiment'
 
-mod 'profile',
-  :git    => 'https://github.com/Aaron-LS/puppet-module-profile.git'
+#mod 'profile',
+#  :git    => 'https://github.com/Aaron-LS/puppet-module-profile.git'
 
-mod 'role',
-  :git    => 'https://github.com/Aaron-LS/puppet-module-role.git'
+#mod 'role',
+#  :git    => 'https://github.com/Aaron-LS/puppet-module-role.git'
 
