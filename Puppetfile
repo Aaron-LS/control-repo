@@ -13,6 +13,7 @@ mod 'puppetlabs-java', '2.4.0'
 mod 'puppetlabs-motd', '1.8.0'
 mod 'saz-sudo', '5.0.0'
 mod 'puppetlabs-tomcat', '2.3.0'
+mod 'puppet-archive', '3.0.0'
 
 
 # Modules from Git
