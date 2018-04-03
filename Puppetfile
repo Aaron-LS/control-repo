@@ -5,7 +5,7 @@ forge "https://forge.puppet.com"
 mod 'puppetlabs-ntp', '7.1.1'
 #mod "puppetlabs/haproxy"
 mod "puppetlabs/concat",      '2.1.0'
-mod 'puppetlabs-stdlib', '4.24.0'
+mod 'puppetlabs-stdlib', '4.25.0'
 mod 'puppetlabs-apt', '4.5.1'
 mod 'puppetlabs-apache', '3.0.0'
 mod 'puppetlabs-mysql', '5.3.0'
