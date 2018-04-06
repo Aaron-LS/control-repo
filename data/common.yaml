@@ -1,3 +1,4 @@
 ---
 message: "This node is using common data"
+profile::fail2ban::production::publicips: '127.0.0.1/8'
 classes:
